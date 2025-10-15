@@ -1,0 +1,7 @@
+name: CombLogThunder
+main: com.comblogthunder.CombLogThunderPlugin
+version: 1.0.0
+author: ThunderDev
+api-version: "1.20"
+softdepend:
+  - WorldGuard

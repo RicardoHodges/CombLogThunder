@@ -1,0 +1,38 @@
+# Configuração Central do Plugin CombLogThunder
+config-geral:
+  # Duração da tag de combate em segundos (reinicia a cada hit)
+  combat-tag-duration: 10
+  # Ativar/Desativar a punição Anti-Log/Anti-Kite (transferência de itens)
+  enable-anti-log-punishment: true
+
+bossbar-settings:
+  # Ativar/Desativar a Boss Bar de combate
+  enabled: true
+  # Texto da Boss Bar. Use {time} para o timer restante.
+  text: "&cNão deslogue em combate caso contrário será punido (Timer de &l{time}&cs)"
+  # Cor da Boss Bar (Valores aceitos: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW)
+  color: RED
+  # Estilo da Boss Bar (SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20)
+  style: SEGMENTED_20
+
+worldguard-restriction:
+  # Ativar/Desativar o bloqueio de entrada em regiões seguras do WorldGuard
+  enabled: true
+
+command-blocking:
+  # Ativar/Desativar o bloqueio total de comandos em combate
+  enabled: true
+  # *NOTA: Por padrão, a lista de comandos permitidos (whitelist) deve ser VAZIA ou não existir.
+  # O bloqueio deve ser total se enabled for true.
+
+messages:
+  # Prefixo usado em todas as mensagens do chat
+  prefix: "&7[&6CombLogThunder&7] "
+  # Mensagens de Combate
+  combat-start: "&cVocê entrou em combate com &l{player}."
+  combat-end: "&aVocê saiu de combate."
+  # Mensagem de Bloqueio
+  region-blocked: "&cVocê não pode entrar nessa área em combate."
+  command-blocked: "&cVocê não pode usar comandos enquanto estiver em combate."
+  # Mensagem de Punição Anti-Log (para o oponente)
+  punishment-message-killer: "&6O jogador &l{fugitive} &6fugiu do combate, e seus itens foram transferidos para o seu inventário."
